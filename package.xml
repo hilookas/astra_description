@@ -9,13 +9,13 @@ for astra_description robot</p>
   <author>TODO</author>
   <maintainer email="TODO@email.com" />
   <license>BSD</license>
-  <buildtool_depend>catkin</buildtool_depend>
-  <depend>roslaunch</depend>
   <depend>robot_state_publisher</depend>
-  <depend>rviz</depend>
+  <depend>rviz2</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>gazebo</depend>
+  <depend>gazebo_ros</depend>
   <export>
     <architecture_independent />
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
