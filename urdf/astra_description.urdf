@@ -506,6 +506,22 @@
       velocity="0" />
   </joint>
   <link
+    name="link_ree">
+  </link>
+  <joint
+    name="joint_ree"
+    type="fixed">
+    <origin
+      xyz="0.063 0 0.195"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="link_r6" />
+    <child
+      link="link_ree" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
     name="link_l1">
     <inertial>
       <origin
@@ -968,5 +984,21 @@
       upper="0"
       effort="0"
       velocity="0" />
+  </joint>
+  <link
+    name="link_lee">
+  </link>
+  <joint
+    name="joint_lee"
+    type="fixed">
+    <origin
+      xyz="0.063 0 0.195"
+      rpy="3.1416 -1.5708 0" />
+    <parent
+      link="link_l6" />
+    <child
+      link="link_lee" />
+    <axis
+      xyz="0 0 0" />
   </joint>
 </robot>
