@@ -5,17 +5,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="-0.17146 -0.0012354 0.31589"
+        xyz="-0.1726 -0.0011902 0.37074"
         rpy="0 0 0" />
       <mass
-        value="16.658" />
+        value="17.285" />
       <inertia
-        ixx="0.53706"
-        ixy="7.7152E-09"
-        ixz="-0.0041718"
-        iyy="0.55924"
-        iyz="2.0121E-09"
-        izz="0.075047" />
+        ixx="0.88736"
+        ixy="-9.7406E-10"
+        ixz="-0.0042126"
+        iyy="0.90938"
+        iyz="1.6278E-09"
+        izz="0.076259" />
     </inertial>
     <visual>
       <origin
@@ -45,17 +45,17 @@
     name="link_r1">
     <inertial>
       <origin
-        xyz="0.023995 -2.3564E-07 -0.0018033"
+        xyz="0.027157 -3.0871E-12 -1.5958E-11"
         rpy="0 0 0" />
       <mass
-        value="0.68712" />
+        value="0.70739" />
       <inertia
-        ixx="0.00031544"
-        ixy="-4.1496E-10"
-        ixz="-1.0217E-07"
-        iyy="0.0002885"
-        iyz="1.4701E-09"
-        izz="0.00019258" />
+        ixx="0.00060081"
+        ixy="6.2989E-14"
+        ixz="-1.3373E-13"
+        iyy="0.00042262"
+        iyz="1.4866E-09"
+        izz="0.0002763" />
     </inertial>
     <visual>
       <origin
@@ -85,7 +85,7 @@
     name="joint_r1"
     type="prismatic">
     <origin
-      xyz="-0.025 -0.0755 0.2178"
+      xyz="-0.0405 -0.065 0.227"
       rpy="0 0 -1.5708" />
     <parent
       link="base_link" />
@@ -95,7 +95,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1"
+      upper="1.2"
       effort="0"
       velocity="0" />
   </joint>
@@ -103,7 +103,7 @@
     name="link_r2">
     <inertial>
       <origin
-        xyz="0.19797 -0.02415 1.0547E-11"
+        xyz="0.19797 -0.02415 -2.5183E-11"
         rpy="0 0 0" />
       <mass
         value="0.75209" />
@@ -112,7 +112,7 @@
         ixy="0.00031904"
         ixz="-1.4792E-09"
         iyy="0.0020715"
-        iyz="1.8045E-10"
+        iyz="1.806E-10"
         izz="0.0019227" />
     </inertial>
     <visual>
@@ -143,7 +143,7 @@
     name="joint_r2"
     type="revolute">
     <origin
-      xyz="0.075 0 0"
+      xyz="0.068 0 0"
       rpy="0 0 0.18555" />
     <parent
       link="link_r1" />
@@ -219,17 +219,17 @@
     name="link_r4">
     <inertial>
       <origin
-        xyz="8.0364E-05 0.032488 -0.02377"
+        xyz="7.4339E-05 0.033099 -0.027091"
         rpy="0 0 0" />
       <mass
-        value="0.080572" />
+        value="0.087098" />
       <inertia
-        ixx="2.305E-05"
-        ixy="3.7691E-10"
-        ixz="-1.0604E-09"
-        iyy="2.01E-05"
-        iyz="-3.8433E-06"
-        izz="1.4952E-05" />
+        ixx="3.1196E-05"
+        ixy="3.7815E-10"
+        ixz="-1.0586E-09"
+        iyy="2.6879E-05"
+        iyz="-5.5018E-06"
+        izz="1.8673E-05" />
     </inertial>
     <visual>
       <origin
@@ -259,7 +259,7 @@
     name="joint_r4"
     type="revolute">
     <origin
-      xyz="0.265 0 -0.079"
+      xyz="0.265 0 -0.087"
       rpy="3.1416 0 0" />
     <parent
       link="link_r3" />
@@ -268,8 +268,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.57"
-      upper="1.57"
+      lower="-3.14"
+      upper="3.14"
       effort="0"
       velocity="0" />
   </joint>
@@ -335,17 +335,17 @@
     name="link_r6">
     <inertial>
       <origin
-        xyz="0.028148 5.5543E-05 0.060092"
+        xyz="0.038451 4.6462E-05 0.063125"
         rpy="0 0 0" />
       <mass
-        value="0.11657" />
+        value="0.13935" />
       <inertia
-        ixx="9.5263E-05"
+        ixx="9.6304E-05"
         ixy="-3.781E-10"
-        ixz="-1.1355E-05"
-        iyy="5.7714E-05"
+        ixz="-1.7516E-05"
+        iyy="7.1049E-05"
         iyz="-1.065E-09"
-        izz="6.6052E-05" />
+        izz="8.241E-05" />
     </inertial>
     <visual>
       <origin
@@ -433,7 +433,7 @@
     name="joint_r7r"
     type="prismatic">
     <origin
-      xyz="0.063 0 0.195"
+      xyz="0.078 0 0.195"
       rpy="1.5708 -1.5708 0" />
     <parent
       link="link_r6" />
@@ -491,7 +491,7 @@
     name="joint_r7l"
     type="prismatic">
     <origin
-      xyz="0.063 0 0.195"
+      xyz="0.078 0 0.195"
       rpy="1.5708 -1.5708 0" />
     <parent
       link="link_r6" />
@@ -523,17 +523,17 @@
     name="link_l1">
     <inertial>
       <origin
-        xyz="0.023995 -2.3564E-07 -0.0018033"
+        xyz="0.027157 -4.3066E-13 -6.6736E-12"
         rpy="0 0 0" />
       <mass
-        value="0.68712" />
+        value="0.70739" />
       <inertia
-        ixx="0.00031544"
-        ixy="-4.1496E-10"
-        ixz="-1.0217E-07"
-        iyy="0.0002885"
-        iyz="1.4701E-09"
-        izz="0.00019258" />
+        ixx="0.00060081"
+        ixy="-4.2708E-15"
+        ixz="-1.6897E-15"
+        iyy="0.00042262"
+        iyz="1.4866E-09"
+        izz="0.0002763" />
     </inertial>
     <visual>
       <origin
@@ -563,7 +563,7 @@
     name="joint_l1"
     type="prismatic">
     <origin
-      xyz="-0.025 0.0755 0.2178"
+      xyz="-0.0405 0.065 0.227"
       rpy="0 0 1.5708" />
     <parent
       link="base_link" />
@@ -573,7 +573,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1"
+      upper="1.2"
       effort="0"
       velocity="0" />
   </joint>
@@ -581,7 +581,7 @@
     name="link_l2">
     <inertial>
       <origin
-        xyz="0.19797 0.02415 3.0141E-11"
+        xyz="0.19797 0.02415 1.1147E-11"
         rpy="0 0 0" />
       <mass
         value="0.75209" />
@@ -590,7 +590,7 @@
         ixy="-0.00031904"
         ixz="1.4791E-09"
         iyy="0.0020715"
-        iyz="1.807E-10"
+        iyz="1.8051E-10"
         izz="0.0019227" />
     </inertial>
     <visual>
@@ -621,7 +621,7 @@
     name="joint_l2"
     type="revolute">
     <origin
-      xyz="0.075 0 0"
+      xyz="0.068 0 0"
       rpy="0 0 -0.18555" />
     <parent
       link="link_l1" />
@@ -648,7 +648,7 @@
         ixy="-1.067E-09"
         ixz="1.0482E-06"
         iyy="0.00075294"
-        iyz="2.8482E-10"
+        iyz="2.844E-10"
         izz="0.00062472" />
     </inertial>
     <visual>
@@ -697,17 +697,17 @@
     name="link_l4">
     <inertial>
       <origin
-        xyz="8.0364E-05 0.032488 -0.02377"
+        xyz="-7.4339E-05 -0.033099 -0.027091"
         rpy="0 0 0" />
       <mass
-        value="0.080572" />
+        value="0.087098" />
       <inertia
-        ixx="2.305E-05"
-        ixy="3.7689E-10"
-        ixz="-1.0605E-09"
-        iyy="2.01E-05"
-        iyz="-3.8433E-06"
-        izz="1.4952E-05" />
+        ixx="3.1196E-05"
+        ixy="3.7816E-10"
+        ixz="1.0586E-09"
+        iyy="2.6879E-05"
+        iyz="5.5018E-06"
+        izz="1.8673E-05" />
     </inertial>
     <visual>
       <origin
@@ -737,7 +737,7 @@
     name="joint_l4"
     type="revolute">
     <origin
-      xyz="0.265 0 -0.079"
+      xyz="0.265 0 -0.087"
       rpy="3.1416 0 0" />
     <parent
       link="link_l3" />
@@ -746,8 +746,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.57"
-      upper="1.57"
+      lower="-3.14"
+      upper="3.14"
       effort="0"
       velocity="0" />
   </joint>
@@ -755,17 +755,17 @@
     name="link_l5">
     <inertial>
       <origin
-        xyz="0.01097 -0.0063842 -0.0053324"
+        xyz="0.011811 0.0068737 -0.0043391"
         rpy="0 0 0" />
       <mass
-        value="0.076944" />
+        value="0.071465" />
       <inertia
-        ixx="1.0865E-05"
-        ixy="1.722E-06"
-        ixz="-1.6372E-06"
-        iyy="2.1382E-05"
-        iyz="1.7243E-06"
-        izz="1.8572E-05" />
+        ixx="1.0672E-05"
+        ixy="-1.722E-06"
+        ixz="-1.6393E-06"
+        iyy="2.1189E-05"
+        iyz="-1.7236E-06"
+        izz="1.856E-05" />
     </inertial>
     <visual>
       <origin
@@ -813,17 +813,17 @@
     name="link_l6">
     <inertial>
       <origin
-        xyz="0.028148 5.5543E-05 0.060092"
+        xyz="0.038451 4.6462E-05 0.063125"
         rpy="0 0 0" />
       <mass
-        value="0.11657" />
+        value="0.13935" />
       <inertia
-        ixx="9.5263E-05"
+        ixx="9.6304E-05"
         ixy="-3.781E-10"
-        ixz="-1.1355E-05"
-        iyy="5.7714E-05"
+        ixz="-1.7516E-05"
+        iyy="7.1049E-05"
         iyz="-1.065E-09"
-        izz="6.6052E-05" />
+        izz="8.241E-05" />
     </inertial>
     <visual>
       <origin
@@ -854,7 +854,7 @@
     type="revolute">
     <origin
       xyz="0 0 0"
-      rpy="1.5708 0 0" />
+      rpy="-1.5708 0 0" />
     <parent
       link="link_l5" />
     <child
@@ -911,7 +911,7 @@
     name="joint_l7r"
     type="prismatic">
     <origin
-      xyz="0.063 0 0.195"
+      xyz="0.078 0 0.195"
       rpy="1.5708 -1.5708 0" />
     <parent
       link="link_l6" />
@@ -969,7 +969,7 @@
     name="joint_l7l"
     type="prismatic">
     <origin
-      xyz="0.063 0 0.195"
+      xyz="0.078 0 0.195"
       rpy="1.5708 -1.5708 0" />
     <parent
       link="link_l6" />
@@ -996,5 +996,123 @@
       link="link_l6" />
     <child
       link="link_lee" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_head_pan">
+    <inertial>
+      <origin
+        xyz="7.4339E-05 0.033099 -0.027091"
+        rpy="0 0 0" />
+      <mass
+        value="0.087098" />
+      <inertia
+        ixx="3.1196E-05"
+        ixy="3.7815E-10"
+        ixz="-1.0586E-09"
+        iyy="2.6879E-05"
+        iyz="-5.5018E-06"
+        izz="1.8673E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_pan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_pan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_head_pan"
+    type="revolute">
+    <origin
+      xyz="0.05 0 1.429"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_head_pan" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_head_tilt">
+    <inertial>
+      <origin
+        xyz="-0.0076351 5.9952E-15 -0.0029726"
+        rpy="0 0 0" />
+      <mass
+        value="0.032288" />
+      <inertia
+        ixx="5.5219E-06"
+        ixy="1.4324E-20"
+        ixz="5.4317E-08"
+        iyy="4.6642E-06"
+        iyz="-1.2451E-21"
+        izz="5.6225E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_tilt.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://astra_description/meshes/link_head_tilt.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_head_tilt"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_head_pan" />
+    <child
+      link="link_head_tilt" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="0"
+      velocity="0" />
   </joint>
 </robot>
