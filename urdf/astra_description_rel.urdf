@@ -524,13 +524,11 @@
     type="fixed">
     <origin
       xyz="0.063 0 0.195"
-      rpy="1.5708 -1.5708 0" />
+      rpy="0 -1.5708 0" />
     <parent
       link="link_r6" />
     <child
       link="link_ree" />
-    <axis
-      xyz="0 0 0" />
   </joint>
   <link
     name="link_l1">
@@ -1015,7 +1013,7 @@
     type="fixed">
     <origin
       xyz="0.063 0 0.195"
-      rpy="3.1416 -1.5708 0" />
+      rpy="0 -1.5708 0" />
     <parent
       link="link_l6" />
     <child
