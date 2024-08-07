@@ -712,7 +712,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 3.1416" />
       <geometry>
         <mesh
           filename="package://astra_description/meshes/link_l4.STL" />
@@ -738,7 +738,7 @@
     type="revolute">
     <origin
       xyz="0.265 0 -0.087"
-      rpy="3.1416 0 0" />
+      rpy="3.1416 0 3.1416" />
     <parent
       link="link_l3" />
     <child
