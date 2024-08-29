@@ -531,6 +531,31 @@
       link="link_ree" />
   </joint>
   <link
+    name="link_ree_teleop">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <collision>
+      <geometry>
+        <cylinder radius="0.0" length="0.0"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <joint
+    name="joint_ree_teleop"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_r6" />
+    <child
+      link="link_ree_teleop" />
+  </joint>
+  <link
     name="link_l1">
     <inertial>
       <origin
@@ -1018,6 +1043,33 @@
       link="link_l6" />
     <child
       link="link_lee" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_lee_teleop">
+    <inertial>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <mass value="0.0"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    </inertial>
+    <collision>
+      <geometry>
+        <cylinder radius="0.0" length="0.0"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </collision>
+  </link>
+  <joint
+    name="joint_lee_teleop"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link_l6" />
+    <child
+      link="link_lee_teleop" />
     <axis
       xyz="0 0 0" />
   </joint>
