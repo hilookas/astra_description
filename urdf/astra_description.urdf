@@ -542,11 +542,11 @@
       rpy="0 -1.5708 0" /> -->
     <!-- eef on gripper center -->
     <!-- <origin
-      xyz="0.080 0.0 0.195"
+      xyz="0.080 0.0 0.200"
       rpy="0 -1.5708 0" /> -->
     <!-- eef on gripper center z-axis + 0.060m (consider teleop tag)  -->
     <origin
-      xyz="0.020 0.0 0.195"
+      xyz="0.020 0.0 0.200"
       rpy="0 -1.5708 0" />
     <parent
       link="link_r6" />
@@ -1056,11 +1056,11 @@
       rpy="0 -1.5708 0" /> -->
     <!-- eef on gripper center -->
     <!-- <origin
-      xyz="0.080 0.0 0.195"
+      xyz="0.080 0.0 0.200"
       rpy="0 -1.5708 0" /> -->
     <!-- eef on gripper center z-axis + 0.060m (consider teleop tag)  -->
     <origin
-      xyz="0.020 0.0 0.195"
+      xyz="0.020 0.0 0.200"
       rpy="0 -1.5708 0" />
     <parent
       link="link_l6" />
